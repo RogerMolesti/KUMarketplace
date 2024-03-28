@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kean University Marketplace</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #ecf0f1;
+            color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .product-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-description {
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            color: #666;
+        }
+
+        .product-price {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #3498db;
+        }
+
+        .add-to-cart-button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart-button:hover {
+            background-color: #217dbb;
+        }
+
+        footer {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div id="ImageCarouselCSS" class="carousel slide" data-ride="carousel">
+    <!-- Carousel Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#ImageCarouselCSS" data-slide-to="0" class="active"></li>
+      <li data-target="#ImageCarouselCSS" data-slide-to="1"></li>
+      <li data-target="#ImageCarouselCSS" data-slide-to="2"></li>
+      <li data-target="#ImageCarouselCSS" data-slide-to="3"></li>
+    </ol>
+    <!-- Carousel Inner -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="keanuniversity1.jpg" class="d-block w-100" alt="Kean University 1">
+      </div>
+      <div class="carousel-item">
+        <img src="keanuniversity2.jpg" class="d-block w-100" alt="Kean University 2">
+      </div>
+      <div class="carousel-item">
+        <img src="keanuniversity3.jpg" class="d-block w-100" alt="Kean University 3">
+      </div>
+      <div class="carousel-item">
+        <img src="keanuniversity4.jpg" class="d-block w-100" alt="Kean University 4">
+      </div>
+    </div>
+</div>
+  
+<header>
+    <h1>Kean University Marketplace</h1>
+</header>
+
+<nav>
+    <a href="homepage.html">Home</a>
+    <a href="#">Products</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="contactus.html">Contact</a>
+    <!-- Add the shopping cart link below -->
+    <a href="cart.html" id="cart-link">
+        <img src="shoppingcart.png" alt="Shopping Cart" width="30">
+    </a>
+</nav>
+
+<section>
+    <!-- Product Cards (Sample) -->
+    <div class="product-card">
+        <img class="product-image" src="product1.jpg" alt="Product 1">
+        <h2 class="product-title">Product 1</h2>
+        <p class="product-description">Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="product-price">Price: $19.99</p>
+        <button class="add-to-cart-button">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img class="product-image" src="product2.jpg" alt="Product 2">
+        <h2 class="product-title">Product 2</h2>
+        <p class="product-description">Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="product-price">Price: $29.99</p>
+        <button class="add-to-cart-button">Add to Cart</button>
+    </div>
+
+    <!-- Add more product cards as needed -->
+</section>
+
+<footer>
+    &copy; 2024 Kean University Marketplace. All rights reserved.
+</footer>
+
+<!-- Include Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+    function createListing() {
+        // Implement functionality to create a new listing
+        alert("Creating a new listing!");
+    }
+</script>
+</body>
+</html>
