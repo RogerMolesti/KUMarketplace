@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kean University Marketplace - Textbooks</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Link your custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="https://www.kean.edu/themes/custom/kean/logo.svg" alt="Kean University Logo" class="logo">
+    <h1>Kean University Marketplace - Textbooks</h1>
+</header>
+
+<nav>
+    <a href="homepage.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="contactus.html">Contact</a>
+</nav>
+
+<section id="shop">
+    <div class="container">
+        <h2>Featured Textbooks</h2>
+        <div class="row">
+            <!-- Textbook 1 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="textbook1.jpg" alt="Introduction to Psychology" class="product-image">
+                    <h3 class="product-name">Introduction to Psychology</h3>
+                    <p class="product-author">by James W. Kalat</p>
+                    <p class="product-edition">11th Edition</p>
+                    <p class="product-condition">Condition: New</p>
+                    <p class="product-price">$45.99</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#contactSellerModal">View Textbook</a>
+
+                </div>
+            </div>
+            <!-- Textbook 2 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="textbook2.jpg" alt="Principles of Microeconomics" class="product-image">
+                    <h3 class="product-name">Principles of Microeconomics</h3>
+                    <p class="product-author">by N. Gregory Mankiw</p>
+                    <p class="product-edition">7th Edition</p>
+                    <p class="product-condition">Condition: Used - Good</p>
+                    <p class="product-price">$35.00</p>
+                    <a href="#" class="btn btn-primary">View Textbook</a>
+                </div>
+            </div>
+            <!-- Textbook 3 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="textbook3.jpg" alt="Organic Chemistry" class="product-image">
+                    <h3 class="product-name">Organic Chemistry</h3>
+                    <p class="product-author">by Leroy G. Wade</p>
+                    <p class="product-edition">8th Edition</p>
+                    <p class="product-condition">Condition: Like New</p>
+                    <p class="product-price">$55.75</p>
+                    <a href="#" class="btn btn-primary">View Textbook</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Seller Modal -->
+<!-- Contact Seller Modal -->
+<div class="modal fade" id="contactSellerModal" tabindex="-1" role="dialog" aria-labelledby="contactSellerModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactSellerModalLabel">Contact Seller</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form id="contactSellerForm">
+                <div class="form-group">
+                    <label for="senderName">Your Name:</label>
+                    <input type="text" class="form-control" id="senderName" name="senderName" required>
+                </div>
+                <div class="form-group">
+                    <label for="senderEmail">Your Email:</label>
+                    <input type="email" class="form-control" id="senderEmail" name="senderEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="messageText" class="col-form-label">Message:</label>
+                    <textarea class="form-control" id="messageText" name="messageText" required></textarea>
+                </div>
+            </form>            
+    </div>
+</div>
+
+  
+<footer class="footer">
+    <div class="container">
+        <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> 1000 Morris Ave, Union, NJ 07083</p>
+            <p><i class="fas fa-phone"></i> General Information: 908-737-KEAN (5326)</p>
+            <p><i class="fas fa-phone"></i> Admissions: 908-737-7100</p>
+        </div>
+        <div class="footer-links">
+            <a href="https://www.kean.edu" target="_blank">Kean University Website</a>
+            <a href="https://www.facebook.com/KeanUniversity" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="https://twitter.com/KeanUniversity" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="https://www.instagram.com/keanuniversity/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://www.linkedin.com/school/kean-university/" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            <a href="https://www.youtube.com/user/KeanUniversity" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS, jQuery, and Popper.js, as needed -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.btn-primary').click(function() {
+            // Example of customizing the modal's content
+            var textbookName = $(this).closest('.product-card').find('.product-name').text();
+            $('#contactSellerModalLabel').text("Contact Seller for " + textbookName);
+        });
+    });
+    </script>
+
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+<script>
+emailjs.init("qSvRu4B3qQfmr-5fw"); 
+
+document.getElementById('contactSellerForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    emailjs.sendForm('service_6rv05qp', 'template_qxfn21h', this)
+        .then(function() {
+            console.log('SUCCESS!');
+            alert('Message sent successfully!');
+            $('#contactSellerModal').modal('hide'); // Hide the modal
+        }, function(error) {
+            console.log('FAILED...', error);
+            alert('Failed to send the message. Please try again.');
+        });
+});
+</script>
+
+</body>
+</html>

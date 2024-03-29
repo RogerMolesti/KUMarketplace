@@ -6,78 +6,17 @@
     <title>Kean University Marketplace - About Us</title>
     <!-- Include Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            position: relative;
-            min-height: 100vh; /* Set minimum height to full viewport height */
-        }
-
-        header {
-            background-color: #3498db; /* Blue */
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            position: relative;
-            z-index: 1;
-        }
-
-        nav {
-            background-color: #ecf0f1; /* Light Grey */
-            color: #333; /* Dark Grey */
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: #333; /* Dark Grey */
-            text-decoration: none;
-            padding: 10px;
-            margin: 0 10px;
-        }
-
-        section {
-            padding: 20px;
-            min-height: calc(100vh - 162px); /* Subtract header and footer height */
-        }
-
-        .about-content {
-            max-width: 800px;
-            margin: auto;
-            text-align: justify;
-        }
-
-        .team-member {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .team-member img {
-            border-radius: 50%;
-            max-width: 150px;
-            height: auto;
-            margin-bottom: 10px;
-        }
-
-        footer {
-            background-color: #3498db; /* Blue */
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Link your custom CSS file -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Kean University Marketplace</h1>
-</header>
-
+    <header>
+        <img src="https://www.kean.edu/themes/custom/kean/logo.svg" alt="Kean University Logo" class="logo">
+        <h1>Kean University Marketplace</h1>
+    </header>
 <nav>
     <a href="homepage.html">Home</a>
     <a href="#">Products</a>
@@ -85,44 +24,146 @@
     <a href="contactus.html">Contact</a>
 </nav>
 
-<section>
-    <div class="about-content">
-        <h2>About Us</h2>
-        <p>Welcome to Kean University Marketplace! We are dedicated to providing a platform for Kean University students, faculty, and alumni to buy and sell goods and services within the university community.</p>
-        <p>Our mission is to create a convenient and safe environment for transactions, fostering collaboration and resourcefulness among members of the Kean community.</p>
-        <p>Whether you're looking to buy textbooks, sell electronics, or offer tutoring services, Kean University Marketplace is your go-to destination.</p>
-    </div>
-
-    <h2>Our Team</h2>
-    <div class="row">
-        <div class="col-sm-3 team-member">
-            <img src="team-member1.jpg" alt="Team Member 1">
-            <h3>Devin Jones</h3>
-            <p>Role: CEO</p>
-        </div>
-        <div class="col-sm-3 team-member">
-            <img src="team-member2.jpg" alt="Team Member 2">
-            <h3>Dylan Carrera</h3>
-            <p>Role: Marketing Manager</p>
-        </div>
-        <div class="col-sm-3 team-member">
-            <img src="team-member3.jpg" alt="Team Member 3">
-            <h3>Roger Molesti</h3>
-            <p>Role: Developer</p>
-        </div>
-        <div class="col-sm-3 team-member">
-            <img src="team-member4.jpg" alt="Team Member 4">
-            <h3>Jack Nastasi</h3>
-            <p>Role: Customer Support</p>
+<section id="about">
+    <div class="container">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Welcome to Kean University Marketplace! We are dedicated to providing a platform for Kean University students, faculty, and alumni to buy and sell goods and services within the university community.</p>
+            <p>Our mission is to create a convenient and safe environment for transactions, fostering collaboration and resourcefulness among members of the Kean community.</p>
+            <p>Whether you're looking to buy textbooks, sell electronics, or offer tutoring services, Kean University Marketplace is your go-to destination.</p>
         </div>
     </div>
 </section>
 
-<footer>
-    &copy; 2024 Kean University Marketplace. All rights reserved.
+<section id="team">
+    <div class="container">
+        <h2>Our Team</h2>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="team-member">
+                    <img src="team-member1.jpg" alt="Team Member 1">
+                    <div class="member-details">
+                        <h3>Devin Jones</h3>
+                        <p>CEO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team-member">
+                    <img src="dylan.webp" alt="Team Member 2">
+                    <div class="member-details">
+                        <h3>Dylan Carrera</h3>
+                        <p>Marketing Manager</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team-member">
+                    <img src="rogerpic.png" alt="Team Member 3">
+                    <div class="member-details">
+                        <h3>Roger Molesti</h3>
+                        <p>Developer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team-member">
+                    <img src="jackpic.webp" alt="Team Member 4">
+                    <div class="member-details">
+                        <h3>Jack Nastasi</h3>
+                        <p>Customer Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="map">
+    <div class="container">
+        <h2>Where to find us!</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6051.4374680607425!2d-74.23568492329991!3d40.68016587139842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3ad5b6a0b3391%3A0x76c486324be28e94!2sKean%20University!5e0!3m2!1sen!2sus!4v1711646681561!5m2!1sen!2sus" 
+            width="100%" 
+            height="450" 
+            style="border:0;"
+             allowfullscreen="" 
+             loading="lazy" 
+             referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+<!-- Technical Support Section -->
+
+
+<!-- Add a hidden div containing the popup content -->
+<!-- Modify the popup content to include a close button and a link -->
+<div id="ocis-info-popup" class="popup">
+    <div class="popup-content">
+        <h3>Kean Office of Computer and Information Services (OCIS)</h3>
+        <p>Contact: ocis@kean.edu</p>
+        <a href="https://helpdesk.kean.edu/support/home" class="btn">Helpdesk</a>
+        <button id="close-popup-btn" class="btn">Close</button>
+    </div>
+</div>
+
+
+<section id="technical-support">
+    <div class="container">
+        <h2>Technical Support</h2>
+        <p>If you need technical assistance or have any inquiries, our support team is here to help.</p>
+        <a href="#" class="btn" id="ocis-info-btn">Kean OCIS Information</a>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> 1000 Morris Ave, Union, NJ 07083</p>
+            <p><i class="fas fa-phone"></i> General Information: 908-737-KEAN (5326)</p>
+            <p><i class="fas fa-phone"></i> Admissions: 908-737-7100</p>
+        </div>
+        <div class="footer-links">
+            <a href="https://www.kean.edu" target="_blank">Kean University Website</a>
+            <a href="https://www.facebook.com/KeanUniversity" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="https://twitter.com/KeanUniversity" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="https://www.instagram.com/keanuniversity/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://www.linkedin.com/school/kean-university/" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            <a href="https://www.youtube.com/user/KeanUniversity" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+        </div>
+    </div>
 </footer>
+<script>
+    
+// Add an event listener to the close button inside the popup
+document.addEventListener("DOMContentLoaded", function() {
+    const ocisInfoBtn = document.getElementById("ocis-info-btn");
+    const ocisInfoPopup = document.getElementById("ocis-info-popup");
+    const popupCloseBtn = document.createElement("span");
+    popupCloseBtn.innerHTML = "&times;";
+    popupCloseBtn.classList.add("popup-close");
+    ocisInfoBtn.addEventListener("click", function(event) {
+        event.preventDefault();
+        ocisInfoPopup.style.display = "block";
+        ocisInfoPopup.appendChild(popupCloseBtn);
+    });
+    popupCloseBtn.addEventListener("click", function() {
+        ocisInfoPopup.style.display = "none";
+        ocisInfoPopup.removeChild(popupCloseBtn);
+    });
+
+    // Close popup when close button inside the popup is clicked
+    const closePopupBtn = document.getElementById("close-popup-btn");
+    closePopupBtn.addEventListener("click", function() {
+        ocisInfoPopup.style.display = "none";
+    });
+});
+
+</script>
 
 </body>
 </html>
-
-
