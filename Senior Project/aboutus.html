@@ -18,10 +18,9 @@
         <h1>Kean University Marketplace</h1>
     </header>
 <nav>
-    <a href="homepage.html">Home</a>
+    <a href="index.html">Home</a>
     <a href="products.html">Products</a>
     <a href="aboutus.html">About Us</a>
-    <a href="contactus.html">Contact</a>
 </nav>
 
 <section id="about">
@@ -79,7 +78,24 @@
     </div>
 </section>
 
-
+<div class="container">
+    <h2 style="text-align:center" >Contact Us</h2>
+    <form action="contactus.php" method="POST">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
 
 <section id="map">
     <div class="container">
