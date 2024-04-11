@@ -1,0 +1,396 @@
+
+       
+       
+       body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #ecf0f1;
+            color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .product-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-description {
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            color: #666;
+        }
+
+        .product-price {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #3498db;
+        }
+
+        .add-to-cart-button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart-button:hover {
+            background-color: #217dbb;
+        }
+
+       
+
+html {
+    height: 100%;
+}
+.logo {
+    width: 150px; /* Adjust the width as needed */
+    margin-right: 20px; /* Adjust the margin as needed */
+    float: left; /* Align the logo to the left */
+}
+
+
+.member-details {
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.member-details:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    max-width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    color: #666;
+    margin: 0;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333; /* Dark Grey */
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0; /* Removes default margin */
+}
+.container {
+    flex: 1; /* Allows container to expand to fill available space */
+}
+
+header {
+    background-color: #3498db; /* Blue */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #ecf0f1; /* Light Grey */
+    color: #333; /* Dark Grey */
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #333; /* Dark Grey */
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    transition: color 0.3s ease; /* Add smooth transition */
+}
+
+nav a:hover {
+    color: #3498db; /* Blue on hover */
+}
+
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* CSS for the "About Us" section */
+#about .about-content {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+    background-color: #f9f9f9; /* Light Grey Background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft Shadow */
+}
+
+#about .about-content h2 {
+    color: #3498db; /* Blue Header */
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#about .about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666; /* Dark Grey Text */
+}
+
+
+.team-member {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+ .footer {
+            background-color: #3498db; /* Blue */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .contact-info {
+            text-align: left;
+        }
+
+        .footer-links {
+            text-align: right;
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer-links a:hover {
+            color: #f0f0f0; /* Light Grey on hover */
+        }
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Adjust the height as needed */
+    margin-top: 40px; /* Adjust the margin as needed */
+    position: relative;
+}
+
+.map-container iframe {
+    border: 2px solid #3498db;
+    border-radius: 10px;
+}
+
+ h2, h3 {
+    color: #3498db; /* Blue */
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666; /* Dark Grey */
+}
+
+/* Technical Support Section Styles */
+#technical-support {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#technical-support h2 {
+    margin-bottom: 30px;
+}
+
+#technical-support p {
+    margin-bottom: 30px;
+}
+
+#technical-support .btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#technical-support .btn:hover {
+    background-color: #2978a0;
+}
+
+/* Add this CSS for popup styling */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.popup-content {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup h3 {
+    color: #3498db; /* Blue */
+}
+
+.popup p {
+    margin-bottom: 10px;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+/* Add this CSS to style the close button */
+.btn {
+    background-color: #3498db; /* Blue */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9; /* Darker Blue on hover */
+}
+
+.popup-content .btn {
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.intro-section {
+    background-color: #3498db; /* Adjusted to a more standard blue, feel free to tweak this */
+    color: white;
+  }
+  
+  .intro-section h1 {
+    font-size: 2.5rem;
+    color: white; 
+    font-weight: bold;
+  }
+  
+  .intro-section p.lead {
+    font-size: 1.25rem;
+    margin-top: 20px;
+  }
+  
+  .intro-section .btn {
+    border-radius: 25px; /* Rounded buttons */
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  
+  .btn-light {
+    border-color: white; /* Ensuring visibility against the intro section background */
+  }
+  
+  .btn-warning {
+    color: white; /* For better readability */
+  }
+  
+    
+  .close-disclaimer {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
