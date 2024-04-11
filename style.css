@@ -1,6 +1,15 @@
 
        
-       
+    .carousel-item {
+        height: 24rem; /* Adjust based on your preference */
+        background-position: center;
+        background-size: cover;
+      }
+      
+      .carousel-caption h1, .carousel-caption p {
+        color: #FFFFFF; /* Example color */
+      }
+      
        body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;

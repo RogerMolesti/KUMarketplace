@@ -3,30 +3,45 @@
 <head>
     <meta charset="utf-8">
     <title>Ku Marketplace Login</title>
-
     <link rel="stylesheet" type="text/css" href="style2.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
     <script src="login.js"></script>
 </head>
-
 <body>
-    <form class="box" action="index.html" method="POST">
-
-        <img src="/KUMarketplace-main4-4/KUMarketplace-main/Senior Project/images/kean_logo_2.png" alt="kean logo" height=100 width=100> 
-
-        <h1>
-            login
-        </h1>
-
+    <form class="box" action="index.html" method="POST" id="login-form">
+        <img src="/KUMarketplace-main4-4/KUMarketplace-main/Senior Project/images/kean_logo_2.png" alt="kean logo" height=100 width=100>
+        <h1>Login</h1>
         <input type="text" name="" placeholder="Enter Username" id="username">
         <input type="password" name="" placeholder="Enter Password" id="password">
-        <input type="submit" name="" id="sign-in-btn" value="Sign In" onclick="validate()">
-
+        <p id="login-message" style="color: red;"></p>
+        <input type="submit" name="" id="sign-in-btn" value="Sign In">
+        <p class="toggle-form">Not a member? <a href="#" onclick="showSignUp()">Sign up now</a></p>
+        <button type="button" onclick="window.location.href='index.html';">Back to Home</button>
     </form>
-</body>
 
+    <form class="box" action="register.html" method="POST" id="signup-form" style="display:none;">
+        <img src="/KUMarketplace-main4-4/KUMarketplace-main/Senior Project/images/kean_logo_2.png" alt="kean logo" height=100 width=100>
+        <h1>Sign Up</h1>
+        <input type="text" name="fullname" placeholder="Full Name" id="fullname">
+        <input type="email" name="email" placeholder="Email" id="email">
+        <input type="password" name="password" placeholder="Password" id="signup-password">
+        <input type="submit" name="" value="Register">
+        <p class="toggle-form">Already a member? <a href="#" onclick="showLogin()">Sign in</a></p>
+        <button type="button" onclick="window.location.href='index.html';">Back to Home</button>
+    </form>
+
+    <script>
+        function showSignUp() {
+            document.getElementById('login-form').style.display = 'none';
+            document.getElementById('signup-form').style.display = 'block';
+        }
+
+        function showLogin() {
+            document.getElementById('login-form').style.display = 'block';
+            document.getElementById('signup-form').style.display = 'none';
+        }
+    </script>
+</body>
 </html>

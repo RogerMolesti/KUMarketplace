@@ -1,74 +1,83 @@
 body {
-	margin: 0;
-	padding:0;
-	font-family: 'Josefin Sans', sans-serif;
-	background: url("https://raw.githubusercontent.com/jgtetrix/KeanWiseWebsite/main/KeanWise/hennings.jpg");
-	background-size: cover; 
+    margin: 0;
+    padding: 0;
+    background: #e9ecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .box {
-	width:300px;
-	padding:30px;
-	position: absolute;
-	top:50%;
-	left:50%;
-	transform: translate(-50%, -50%);
-	background: rgba(0,0,0,0.4);
-	text-align: center;
-	border-radius: 8px;
+    position: relative;
+    width: 300px;
+    padding: 40px;
+    background: #fff;
+    text-align: center;
+    transition: 0.25s;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
 }
 
-.box h1 {
-	color: white;
-	text-transform: uppercase;
-	font-weight: 700;
+.box input[type="text"], .box input[type="password"], .box input[type="email"], .box button {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 10px 10px;
+    width: 200px;
+    outline: none;
+    color: #333;
+    border-radius: 24px;
+    transition: 0.25s;
 }
 
-.box input[type="text"], .box input[type="password"] {
-	border: 0;
-	background: none;
-	display: block;
-	margin: 20px auto;
-	text-align: center;
-	border: 3px solid white;
-	padding: 14px 10px;
-	width: 220px;
-	outline: none;
-	color: white;
-	border-radius: 24px;
-	transition: 0.25px;
+.box input[type="text"]:focus, .box input[type="password"]:focus, .box input[type="email"]:focus, .box button:focus {
+    width: 280px;
+    border-color: #2ecc71;
 }
 
-.box input[type="text"], .box input[type="password"] focus {
-	width: 270px;
-	border-color: white;
+.box input[type="submit"], .box button {
+    border: 0;
+    background: #3498db;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 10px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
 }
 
-.box input[type="submit"] {
-	border: 0;
-	background: none;
-	display: block;
-	margin: 20px auto;
-	text-align: center;
-	border: 3px solid #ED9C25;
-	padding: 14px 10px;
-	outline: none;
-	color: white;
-	border-radius: 24px;
-	transition: 0.25px;
-	cursor: pointer;
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 15px;
+.box input[type="submit"]:hover, .box button:hover {
+    background: #2ecc71;
 }
 
-.box input[type="submit"]:hover {
-	background: #ED9C25;
+.toggle-form {
+    margin-top: 15px;
 }
 
-::placeholder {
-	color: #ebebeb;
-	font-size: 15px;
-	font-family: 'Josefin Sans', sans-serif;
+.toggle-form a {
+    color: #3498db;
+    text-decoration: none;
 }
 
+.toggle-form a:hover {
+    text-decoration: underline;
+}
 
+.box button {
+    background: #6c757d; /* Different background color to distinguish from the submit button */
+    border-color: #6c757d;
+}
+
+.box button:hover {
+    background: #5a6268;
+}
